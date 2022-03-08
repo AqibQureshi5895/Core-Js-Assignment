@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="form-wrapper">
+        <form action="" onsubmit="validateOnSubmit()" class="registration-form">
+            <div class="form-field">
+                <label for="username">Full Name:</label>
+                <div class="input-field">
+                    <input id="username" type="text" onblur="userName()">
+                    <span id="name"></span>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <div class="input-field">
+                    <input id="email" type="email" onblur="emailCheck()">
+                    <span id="mail"></span>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="pass1">Password:</label>
+                <div class="input-field">
+                    <input id="pass1" type="password" onblur="passwordCheck()">
+                    <span id="pass-1"></span>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="pass2"> Confirm Password:</label>
+                <div class="input-field">
+                    <input id="pass2" type="password" onblur="confirmPassword()">
+                    <span id="pass-2"></span>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="contact">Contact No:</label>
+                <div class="input-field">
+                    <input id="contact" type="tel" onblur="contactNumberCheck()">
+                    <span id="number"></span>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <div class="input-field">
+                    <input type="submit" id="submit-btn" value="Register">
+                </div>
+            </div>
+
+
+        </form>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="form-wrapper">
+      <form action="" class="registration-form">
+        <h1 style="text-align: center">Login</h1>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <div class="input-field">
+            <input id="email" type="email" onblur="emailCheck()" />
+            <span id="mail"></span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="pass1">Password:</label>
+          <div class="input-field">
+            <input id="pass1" type="password" onblur="passwordCheck()" />
+            <span id="pass-1"></span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <span id="verfied-msg"></span>
+        </div>
+
+        <div class="form-field">
+          <div class="input-field">
+            <input type="submit" id="submit-btn" value="Register" />
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
